@@ -54,6 +54,7 @@ class GenericLeaf : public Leaf {
 
    // DCaPST: START
    float getSLN(void);
+   float getGreenN(void);
    float sln;
    // DCaPST: END
 

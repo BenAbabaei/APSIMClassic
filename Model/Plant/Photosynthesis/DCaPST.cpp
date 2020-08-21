@@ -15,6 +15,7 @@ DCaPST::DCaPST(ScienceAPI& scienceAPI, plantInterface& p)
 {
 	scienceAPI.expose("DCAPSTDOY", "", "", DOY);
 	scienceAPI.expose("DCAPSTsln", "", "", SLN);
+	scienceAPI.expose("DCAPSTGreenN", "", "", GreenN);
 	scienceAPI.expose("DCAPSTRootShootRatio", "", "", RootShootRatio);
 	scienceAPI.expose("DCAPSTswAvail", "", "", SWAvailable);
 };
@@ -34,6 +35,7 @@ float DCaPST::PotentialDM(float radiationInterceptedGreen)   // (PFR)
 
 	DOY = plant.environment().dayOfYear();
 	SLN = plant.leaf().getSLN();
+	GreenN = plant.leaf().getGreenN();
 	RootShootRatio = plant.arbitrator().ratioRootShoot();
 	SWAvailable = plant.root().swSupply();
 
@@ -75,5 +77,6 @@ void DCaPST::Read(void) {}
 void DCaPST::ZeroAll(void)
 {
 	SLN = 0;
+	GreenN = 0;
 	RootShootRatio = 0;
 }

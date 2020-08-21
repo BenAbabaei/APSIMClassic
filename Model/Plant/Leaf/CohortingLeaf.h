@@ -26,6 +26,7 @@ class CohortingLeaf : public Leaf {
    float getNodeNo(void) {return gNodeNo;};
    float getDltNodeNo(void){return dltNodeNo;};
    float getSLN(void) { return 0; }
+   float getGreenN(void) { return 0; }
 
    float getLAI(void)
      { return sum(gLeafArea) * plant->population().Density() * smm2sm; };

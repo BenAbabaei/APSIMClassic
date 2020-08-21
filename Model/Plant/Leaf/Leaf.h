@@ -82,6 +82,7 @@ public:
 	void onSetLaiTrigger(float value);
 	void ChoosePsModel(string PsModelName);
 	virtual float getSLN(void) = 0;
+	virtual float getGreenN(void) = 0;
 
 	string PsModelName;
 	string PsModelName1;

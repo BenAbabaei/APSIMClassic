@@ -204,6 +204,11 @@ float GenericLeaf::getSLN()
 	return sln;
 }
 
+float GenericLeaf::getGreenN()
+{
+	return Green.N();
+}
+
 void GenericLeaf::get_sln(protocol::Component* system, protocol::QueryValueData& qd)
 //=======================================================================================
 {

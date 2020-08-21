@@ -34,6 +34,7 @@ private:
 	int DOY;
 	float RootShootRatio;
 	float SLN;
+	float GreenN;
 	float SWAvailable;
 };
 #endif
